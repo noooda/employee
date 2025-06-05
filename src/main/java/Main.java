@@ -2,8 +2,12 @@ import io.github.noooda.employee.domain.models.*;
 
 class Main {
     public static void main(String[] args) {
-        JuniorEngineer Taro = new JuniorEngineer(1, "Taro");
-        System.out.println("ID: " + Taro.getId());
-        System.out.println("Name: " + Taro.getName());
+        JuniorEngineer Kazuki = new JuniorEngineer(1, "Kazuki");
+        SeniorEngineer Taro = new SeniorEngineer(2, "Taro");
+
+        String code = "[Login Logic]";
+
+        Kazuki.writeCode(code);
+        Taro.refactorCode(code);
     }
 }
